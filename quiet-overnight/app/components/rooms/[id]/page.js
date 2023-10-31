@@ -12,7 +12,7 @@ export default function Room({ roomData }) {
 }
 
 export async function getServerSideProps({ params }) {
-   
+
    const { id } = params;
 
    const roomData = {

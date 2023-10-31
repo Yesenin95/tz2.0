@@ -53,7 +53,7 @@ export default function Home() {
       <Box>
          <Box>
             <Text>Номера</Text>
-            <Link href={"/rooms"}>
+            <Link href={"/roomsPage"}>
                <Button color='black'>Все номера</Button>
             </Link>
          </Box>

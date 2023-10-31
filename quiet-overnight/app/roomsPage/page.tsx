@@ -47,7 +47,7 @@ export default function allRoms() {
                   key={room.id}
                >
                   <Image src={room.imageUrl} width={500} height={500} alt={'Кровать'}></Image>
-                  <Link href={`/components/rooms/${room.id}`}>
+                  <Link href={`/rooms/${room.id}`}>
                      <Text color={'violet'} _hover={{ color: 'black' }}>
                         {room.title}
                      </Text>
@@ -57,6 +57,5 @@ export default function allRoms() {
             ))}
          </Flex>
       </Box>
-
    </>
 }
