@@ -1,0 +1,232 @@
+/* Сначала общие стили */
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+/* Стили для основного контейнера .main */
+.main {
+   display: flex;
+   flex-direction: row;
+   align-items: stretch;
+   justify-content: center;
+   height: 100%;
+   height: 100vh;
+   align-items: center;
+}
+
+/* Стили для секции с фотографией .photo */
+.photo {
+   max-width: 600px;
+}
+
+.photo img {
+   max-width: 100%;
+}
+
+/* Стили для секции формы .form */
+.form {
+   max-width: 600px;
+}
+
+/* Заголовок */
+.title {
+   font-weight: 700;
+   font-size: 34px;
+}
+
+/* Обертка для полей ввода */
+.form-input {
+   display: flex;
+   align-items: center;
+   width: 100%;
+}
+
+/* Стили для .fieldset и .fieldset-class */
+.fieldset,
+.fieldset-class {
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   color: blue;
+   transition: border-color 0.3s;
+   width: 100%;
+}
+
+/* Стили при фокусе на полях ввода */
+.fieldset-focus {
+   border-color: aqua;
+}
+
+/* Убираем границы у полей ввода и селекта */
+input[type="text"],
+select {
+   border: none;
+   outline: none;
+}
+
+/* Стили для выбранного варианта в селекте */
+select option:checked {
+   font-weight: bold;
+}
+
+/* Ширина полей ввода и селекта */
+input[type="text"],
+.fieldset {
+   width: 100%;
+}
+
+select,
+.fieldset-class {
+   width: 50px;
+}
+
+/* Стили для иконки "закрыть" в поле ввода */
+.circle-input {
+   position: relative;
+}
+
+.close {
+   position: absolute;
+   right: 0px;
+   top: 0px;
+   visibility: hidden;
+   cursor: pointer;
+}
+
+input:focus+.close {
+   visibility: visible;
+}
+
+/* Стили для секции с текстовыми элементами .text */
+.text {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.text p {
+   background-color: grey;
+   padding: 6px;
+   border-radius: 15px;
+   margin-right: 10px;
+   cursor: pointer;
+}
+
+.text p:last-child {
+   margin-right: 0;
+}
+
+/* Стили для текста "Показать больше" */
+.text-look {
+   font-size: 25px;
+   color: #00b4f4;
+}
+
+.text-look>p>span {
+   cursor: pointer;
+}
+
+/* Стили для текстовой области .textarea */
+.textarea {
+   width: 100%;
+}
+
+#myTextarea {
+   width: auto;
+   width: 100%;
+   height: 100px;
+   resize: none;
+   border-radius: 10px;
+   padding: 10px;
+}
+
+/* Счетчик символов */
+#charCount {
+   display: flex;
+   flex-direction: row-reverse;
+   font-size: 12px;
+}
+
+/* Кнопки */
+.button {
+   background: transparent;
+   padding: 15px;
+   width: 110px;
+   border-radius: 15px;
+   color: aqua;
+   border: 1px solid;
+   font-weight: 700;
+}
+
+.button-next {
+   width: 250px;
+   padding: 15px;
+   border-radius: 15px;
+}
+
+/* Медиазапрос для адаптивности */
+@media (max-width: 840px) {
+   body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+
+   .main {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .photo {
+      width: 600px;
+      margin-top: 250px;
+   }
+
+   .btn {
+      margin-bottom: 10px;
+   }
+}
+
+@media(max-width:480px) {
+   body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+
+   body {
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+
+   .photo {
+      width: 350px;
+      margin-top: 200px;
+   }
+
+   .btn {
+      margin-bottom: 10px;
+   }
+}
+
+@media(max-width:340px) {
+   body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+
+   .photo {
+      width: 300px;
+      margin-top: 300px;
+   }
+
+   .btn {
+      margin-bottom: 10px;
+   }
+}
