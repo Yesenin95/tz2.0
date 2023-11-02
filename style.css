@@ -213,7 +213,12 @@ input:focus+.close {
       margin-bottom: 10px;
    }
 }
-
+@media(max-width:400px) {
+   .photo {
+         width: 300px;
+         margin-top: 200px;
+      }
+}
 @media(max-width:340px) {
    body {
       margin: 0;
