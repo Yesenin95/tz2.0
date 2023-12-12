@@ -47,7 +47,9 @@ export default function Rooms() {
                   key={room.id}
                >
                   <Image src={room.imageUrl} width={500} height={500} alt={'Кровать'}></Image>
-                  <Link href={`app/component/rooms/${room.id}/page`}>
+                  <Link href={{
+                     pathname: `/components/rooms/[id]/${room.id}`,
+                  }}>
                      <Text color={'violet'} _hover={{ color: 'black' }}>
                         {room.title}
                      </Text>

@@ -1,0 +1,72 @@
+/* styles/CustomSelect.module.css */
+
+.customSelect {
+   position: relative;
+   display: inline-block;
+   background: transparent;
+   border: 1px solid #002B45;
+   color: #002B45;
+   padding: 9px 18px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+.customSelect:hover {
+   color: white;
+   background-color: #002B45;
+}
+
+.customSelect>:first-child {
+   width: max-content;
+   display: flex;
+   align-items: center;
+}
+
+.option {
+   display: flex;
+   padding: 8px;
+   cursor: pointer;
+   gap: 10px;
+}
+
+.arrow {
+   transform: rotate(180deg);
+}
+
+.optionsContainer {
+   display: block;
+   margin-top: 20px;
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: max-content;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   overflow: hidden;
+   display: none;
+   z-index: 1;
+   background-color: white;
+   color: black;
+}
+
+.optionsContainer {
+   display: block;
+   margin-top: 20px;
+}
+
+.optionsContainer>div:hover {
+   background-color: #ccc;
+}
+
+
+.optionNumber {
+   font-size: 10px;
+}
+
+.arrow {
+   margin-left: auto;
+}
+
+.open .optionsContainer {
+   display: block;
+}

@@ -214,16 +214,24 @@ input:focus+.close {
    }
 }
 
+@media(max-width:400px) {
+   .photo {
+         width: 300px;
+         margin-top: 200px;
+      }
+}
+
 @media(max-width:340px) {
    body {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      margin-left: 5px;
    }
 
    .photo {
       width: 300px;
-      margin-top: 300px;
+      margin-top: 200px;
    }
 
    .btn {
